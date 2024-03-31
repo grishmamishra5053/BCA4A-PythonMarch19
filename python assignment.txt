@@ -1,0 +1,459 @@
+1.1 WAP to Calculate Area and Perimeter of a Rectangle
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+length = float(input("Enter length of the rectangle: "))
+breadth = float(input("Enter breadth of the rectangle: "))
+area = length * breadth
+perimeter = 2 * (length * breadth)
+print("Area of rectangle = ", area)
+print("Perimeter of rectangle = ", perimeter)
+
+
+1.2 WAP to calculate Avg. marks of 3 subjects
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+marks1= int(input("enter marks of History::"))
+marks2= int(input("enter marks Geography::"))
+marks3= int(input("enter marks of Maths::"))
+Total=(marks1+marks2+marks3)
+average = (marks1+marks2+marks3)/3.
+print("total marks:",Total)
+print("average::",average )
+
+1.3 WAP to compute compound Interest
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+def compound_interest(principal, rate, time):
+Amount = principal * (pow((1 + rate / 100), time))
+CI = Amount - principal
+print("Compound interest is", CI)
+principal = int(input("Enter the principal amount: "))
+rate = int(input("Enter rate of interest: "))
+time = int(input("Enter time in years: " ))
+compound_interest(principal,rate,time)
+
+
+2.1 WAP to demonstrate Slicing Operations in Strings
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+String = 'GRISHMA'
+print(String[-5:-2])
+
+
+2.2 WAP to demonstrate built in functions of Strings
+print ("Name:Grishma Mishra Rollno:2210997084")
+text = 'Grishma Mishra'
+print(text.upper()) 
+print(text.lower()) 
+print(text.title()) 
+print(text.swapcase()) 
+print(text.capitalize()) 
+print(text.replace())
+print(text.find(a))
+  
+3.1 WAP to check if one No. is divisible by the other or not
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+num = int (input (“Enter the number whose divisibility needs to be checked:”))
+div = int (input (“Enter the number with which divisibility needs to be checked:”))
+if num%div == 0:
+ print (“The number is divisible.”)
+else:
+ print (“The number is not divisible.”)
+
+
+3.2 WAP to check if a Number is +ve, -ve or zero
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+n = float (input (“Enter a number:”))
+if num >= 0:
+ if num == 0:
+print (“The number provided is zero”)
+else:
+print (“The number entered is a positive number”)
+else:
+print (“The number provided is a negative number”)
+
+
+3.3 WAP to check if a given year is Leap or not
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+year = 2020 
+if ( year % 4 == 0 and year % 100 != 0 ) or ( year % 400 == 0 ): 
+print ( f "{year} is a leap year .") 
+else : 
+print(f "{year} is not a leap year.")
+
+
+3.4 WAP to accept basic salary for the employee. Calculate DA as
+30% of bs, HRA as 20% of bs if bs&gt;=20000else compute DA as
+20% and HRA as 10%. Display the result.
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+bs = float(input("Enter the basic salary: "))
+if bs >= 20000:
+    da = bs * 0.3
+    hra = bs * 0.2
+else:
+    da = bs * 0.2
+    hra = bs * 0.1
+gs = bs + da + hra
+print("Gross Salary: ", gs)
+
+
+3.5 WAP to accept sales amount for the salesman. Compute
+commission as 20% of sales amount if sales amount&gt;=15000,
+comm as 15% if sales amount &gt;=1000 else comm as 10 %.
+Display the result.
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+sales_amount = float(input("Enter sales amount: "))
+if sales_amount >= 15000:
+    comm = 0.20 * sales_amount
+elif sales_amount >= 1000:
+    comm = 0.15 * sales_amount
+else:
+    comm = 0.10 * sales_amount
+print("Commission: ", comm)
+
+
+4.1 WAP to show working of a while Loop with a text
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+count = 0
+while (count < 5): 
+    count = count + 1
+    print("Grishma Mishra")
+
+
+4.2 WAP to show working of a while Loop with a Numbers
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+number = 1
+while number <= 5:
+    print(number)
+    number = number + 1
+
+4.3 WAP to show the working of break and continue statement
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+for i in range(1, 11):
+    if i % 2 == 0:
+        continue
+    print(i)
+for i in range(1, 11):
+    if i == 5:
+        break
+    print(i)
+for i in range(1, 11):
+    if i == 3:
+        continue
+    print(i)
+
+4.4 WAP to the use of else statement with while and break
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+items = ['apple', 'banana', 'orange']
+search_item = 'kiwi'
+
+for item in items:
+    if item == search_item:
+        print(f"Found {search_item}!")
+        break
+else:
+
+    print(f"{search_item} not found.")
+
+
+4.5 WAP to compute the Sum of the Series 4 + 8 + 12 + … + 40
+
+print("Name:Grishma Mishra Rollno:2210997084")
+sum = 0
+current_num = 4
+while current_num <= 40:
+    sum += current_num
+    current_num += 4
+print(sum)
+
+
+4.6 Write a program to display the Fibonacci sequences up to
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+nth term where n is provided by the user.
+nterms = int(input(" enter the number "))
+n1, n2 = 0, 1
+count = 0
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
+
+
+4.7 WAP that prints multiplication table of a number using for loop.
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+num = int(input("Enter the number: "))
+print("Multiplication Table of", num)
+for i in range(1, 11):
+   print(num,"X",i,"=",num * i)
+
+
+4.8 WAP To print a Triangle Pattern
+
+print ("Name:Grishma Mishra Rollno:2210997084")
+def print_triangle(n):
+    for i in range(n):
+        print('*' * (i+1))
+print_triangle(5)
+
+
+4.9 WAP to compute Sum of the series 3 + 6 + 9 + … + 30
+
+print("Name:Grishma Mishra Rollno:2210997084")
+def sum_series(start, end, step):
+    total = 0
+    for i in range(start, end + 1, step):
+        total += i
+    return total
+n = 10
+print(sum_series(3, 30, n))
+
+
+4.10 WAP to print the product of the series m = 15 * 13 * 11 * 9 * 7
+
+print("Name:Grishma Mishra Rollno:2210997084")
+def product(m):
+    product = 1
+    for n in range(m, 1, -2):
+        product *= n
+    return product
+m = 15
+print(product(m))
+
+
+4.11 WAP to compute factorial of a Number
+
+print("Name:Grishma Mishra Rollno:2210997084")
+n = int (input ("Enter a number: "))
+factorial = 1
+if n >= 1:
+    for i in range (1, n+1):
+        factorial=factorial *i
+print("Factorial of the given number is: ", factorial)
+
+
+4.12 WAP to display the Cube of first 10 even numbers
+
+print("Name:Grishma Mishra Rollno:2210997084")
+for i in range(2, 11*2, 2):
+    print(i, "^3 =", i**3)
+
+
+4.13 WAP to compute sum of first n natural numbers
+
+print("Name:Grishma Mishra Rollno:2210997084")
+n = int(input("Enter the number of terms: "))
+sum = 0
+for i in range(1, n+1):
+    sum += i
+print("The sum of the first", n, "natural numbers is:", sum)
+
+
+4.14 WAP to display 1 to 10 numbers in reverse order
+
+print("Name:Grishma Mishra Rollno:2210997084")
+print("First 10 Natural Numbers in Reverse")
+for i in range(10, 0, -1):
+    print(i)
+
+
+4.15 WAP to create a list of any specific size. Arrange all the
+elements in ascending order. Display list before and after sorting
+
+import random
+
+print("Name:Grishma Mishra Rollno:2210997084")
+my_list = []
+size = int(input("Enter the size of the list: "))
+
+
+for i in range(size):
+    my_list.append(random.randint(1, 100))
+
+print("List before sorting:")
+print(my_list)
+
+my_list.sort()
+
+print("List after sorting:")
+print(my_list)
+
+
+5.1 WAP to show the creation and working of lists
+
+print("Name:Grishma Mishra Rollno:2210997084")
+languages = ['Python', 'Swift', 'C++']
+print(languages[0])   
+print(languages[2])  
+
+
+5.2 WAP to print elements of a list[‘q’,’w’,’e’,’r’,’t’,’y’] in 3eparate lines along with element’s both indexes (Positive and Negative).
+
+print("Name:Grishma Mishra Rollno:2210997084")
+my_list = ['q', 'w', 'e', 'r', 't', 'y']
+for i, elem in enumerate(my_list):
+    print(elem)
+    negative_index = len(my_list) - 1 - i
+    print("Positive index: {}, Negative index: {}".format(i, negative_index))
+    print()
+
+
+
+5.3 WAP to demonstrate the working of methods used with lists
+
+print("Name:Grishma Mishra Rollno:2210997084")
+
+my_list = [1, 5, 3, 7, 2]
+print("Accessing elements using index:")
+print("First element: ", my_list[0])
+print("Last element: ", my_list[-1])
+print("Slicing:")
+print("Elements from index 1 to 3: ", my_list[1:4])
+print("Elements from index 2 to end: ", my_list[2:])
+print("All elements: ", my_list[:])
+
+
+print("Modifying lists:")
+my_list.append(8) 
+print("After appending: ", my_list)
+my_list.insert(2, 6) 
+print("After inserting: ", my_list)
+my_list[1:3] = [9, 10] 
+print("After replacing: ", my_list)
+del my_list[2]
+print("After deleting: ", my_list)
+my_list[1:3] = []
+print("After deleting slice: ", my_list)
+
+
+print("List comprehension:")
+my_list = [x * 2 for x in my_list]
+print("After applying function: ", my_list)
+my_list = [x for x in my_list if x % 2 == 0] 
+print("After filtering: ", my_list)
+
+
+print("Sorting:")
+my_list.sort()
+print("Sorted list: ", my_list)
+my_list.sort(reverse=True) 
+print("Reversed sorted list: ", my_list)
+
+
+5.4 WAP to create a 3*3 Matrix and how to extract individual elements of the
+matrix
+
+print("Name:Grishma Mishra Rollno:2210997084")
+R = int(input("Enter the number of rows:"))
+C = int(input("Enter the number of columns:"))
+ 
+matrix = []
+print("Enter the entries rowwise:")
+ 
+for i in range(R):        
+    a =[]
+    for j in range(C):      
+         a.append(int(input()))
+    matrix.append(a)
+ 
+
+for i in range(R):
+    for j in range(C):
+        print(matrix[i][j], end = " ")
+    print()
+
+
+5.5 WAP to demonstrate built-in functions in Lists
+
+print("Name:Grishma Mishra Rollno:2210997084")
+numbers = [2, 1, 0, 9, -7,-0.-8.-4 ]
+
+total = sum(numbers)
+print("Sum of the list: ", total)
+
+min_num = min(numbers)
+print("Smallest number: ", min_num)
+
+
+max_num = max(numbers)
+print("Largest number: ", max_num)
+
+
+list_length = len(numbers)
+print("Length of the list: ", list_length)
+
+
+sorted_numbers = sorted(numbers)
+print("Sorted list: ", sorted_numbers)
+
+
+numbers.reverse()
+print("Reversed list: ", numbers)
+
+
+numbers.sort()
+print("Sort list in-place: ", numbers)
+
+
+numbers.append(3)
+print("Append 3: ", numbers)
+
+
+numbers.insert(2, 7)
+print("Insert 7 at position 2: ", numbers)
+
+
+occurrences = numbers.count(5)
+print("Occurrences of 5: ", occurrences)
+
+
+numbers.remove(9)
+print("Remove 9: ", numbers)
+
+
+element = numbers.pop(1)
+print("Pop element at position 1: ", element)
+
+
+5.6 WAP to calculate the mean, variance and std. deviation of given list of
+numbers
+
+import math
+
+print("Name:Grishma Mishra Rollno:2210997084")
+
+numbers = [2, 4, 6, 8, 10]
+
+mean = sum(numbers) / len(numbers)
+
+
+variance = sum((x - mean) ** 2 for x in numbers) / len(numbers)
+
+
+std_deviation = math.sqrt(variance)
+
+
+print("Mean:", mean)
+print("Variance:", variance)
+print("Standard Deviation:", std_deviation)
+
